@@ -1,6 +1,8 @@
 package ec.edu.ec.application.service;
 
 
+import java.util.List;
+
 import ec.edu.ec.domain.model.Reporte;
 import ec.edu.ec.infraestructure.repository.ReporteRepositoryImpl;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -48,6 +50,9 @@ public class ReporteService {
     public void eliminarReporteId(Integer id) {
  
         this.ri.deleteById(id);
+    }
+    public List<Reporte> buscarTodos(){
+        return this.ri.findAll().list();
     }
  
 }
