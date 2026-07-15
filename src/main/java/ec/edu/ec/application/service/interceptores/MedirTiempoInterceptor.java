@@ -1,4 +1,4 @@
-package ec.edu.ec.interceptores;
+package ec.edu.ec.application.service.interceptores;
 
 import jakarta.annotation.Priority;
 import jakarta.interceptor.AroundInvoke;

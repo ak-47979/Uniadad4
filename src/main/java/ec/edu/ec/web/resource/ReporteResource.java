@@ -1,9 +1,11 @@
 package ec.edu.ec.web.resource;
 
-import com.google.inject.Inject;
+
+
 
 import ec.edu.ec.application.service.ReporteService;
 import ec.edu.ec.domain.model.Reporte;
+import jakarta.inject.Inject;
 
 public class ReporteResource {
     @Inject

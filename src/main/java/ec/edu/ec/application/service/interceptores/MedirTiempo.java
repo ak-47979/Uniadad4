@@ -1,4 +1,4 @@
-package ec.edu.ec.interceptores;
+package ec.edu.ec.application.service.interceptores;
 
 import jakarta.interceptor.InterceptorBinding;
 import java.lang.annotation.ElementType;
