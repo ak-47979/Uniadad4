@@ -54,6 +54,8 @@ public class ReporteService {
     public List<Reporte> buscarTodos(){
         return this.ri.findAll().list();
     }
+
+    
  
 }
  
