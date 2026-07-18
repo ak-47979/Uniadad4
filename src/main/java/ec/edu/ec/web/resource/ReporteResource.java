@@ -43,7 +43,7 @@ public class ReporteResource {
         this.reporteService.crearReporte(reporte);
     }
 
-     //Escuchando en el puerto: http://localhost:8081/reportes/actualizar
+     //Escuchando en el puerto: http://localhost:8081/reportes/actualizar/{id}
     @Path("/actualizar/{id}")
     @PUT
     public void actualizar(Reporte reporte, @PathParam("id") Integer id){
@@ -51,9 +51,9 @@ public class ReporteResource {
     }
  
      //Escuchando en el puerto: http://localhost:8081/reportes/actualizar
-    @Path("/eliminar")
+    @Path("/eliminar/{id}")
     @DELETE
-    public void eliminar(Integer id){
+    public void eliminar(@PathParam("id") Integer id){
         this.reporteService.eliminarReporteId(id);
     }
 

@@ -23,8 +23,8 @@ public class ReporteService {
     }
  
     public void actualizarReporte(Reporte reporte, Integer id) {
- 
-        // this.ri.getEntityManager().merge(reporte);
+    
+        
  
         Reporte base = this.buscaReporteId(id);
         base.setFormato(reporte.getFormato());
